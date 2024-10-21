@@ -3,7 +3,7 @@ use std::ffi;
 use libc::{c_void, O_CREAT, O_TRUNC, O_WRONLY, S_IRWXU};
 
 /*
-    For semplicity's sake, every system call has an assertion that the operation results in a non-failure.
+    To keep it simple, every system call has an assertion that the operation results in a non-failure.
 */
 
 fn spawn_fork () -> i32 {
